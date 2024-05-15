@@ -1,0 +1,318 @@
+#app header .fixed-top {
+    position: static;
+}
+
+#app header a.navbar-brand {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+#app main {
+    padding: 0 0px;
+    margin-top: 0px;
+}
+
+#app main .row {
+    margin: 0 0;
+}
+
+#app main .searcharea {
+    margin: 0 5px;
+}
+
+#app main .searcharea .form-row {
+    flex-wrap: nowrap;
+}
+
+#app main #demo #carouselExampleCaptions img {
+    width: 100%;
+}
+
+#app #ad img {
+    width: 100%;
+}
+
+#app #ad img button .close {
+    z-index: 10;
+}
+
+#app main .discount-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#app main .discount-box img {
+    width: 40%;
+    margin-top: 5px;
+}
+
+#app main .discount-box .discount-text {
+    line-height: 10%;
+    margin-top: 20%;
+    margin-left: 5px;
+}
+
+#app>footer>.row>div:hover {
+    cursor: pointer;
+}
+
+header nav #navbar>ul>li>a:hover {
+    color: #65C3EF;
+    border-bottom: 3px solid #65C3EF;
+}
+
+.active-link {
+    color: #65C3EF;
+    display: inline-block;
+    border-bottom: 3px solid #65C3EF;
+}
+
+.navbar-nav .nav-link {
+    display: inline-block!important;
+}
+
+@media (max-width: 767px) {
+    .mx-img {
+        transform: scale(0.8)!important;
+    }
+
+    .mx-ul {
+        /* border-top: 1px solid #65C3EF; */
+    }
+}
+
+/* 导航栏展开动画 */
+.my-element {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.my-element.is-open {
+    height: auto;
+    opacity: 1;
+}
+
+.my-element.is-open {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-custom {
+    background-color: #4CAF50;
+    /* 使用更柔和的绿色 */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+.btn-custom:hover {
+    background-color: #45a049;
+    /* 悬停时改变背景颜色 */
+}
+
+.btn-custom img {
+    max-height: 30px;
+    /* 调整图标大小 */
+    vertical-align: middle;
+    /* 垂直居中 */
+}
+
+.custom-img {
+    margin-bottom: 15px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 字体媒体查询 */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 2%;
+        margin-right: 2%;
+    }
+
+    .img-fluid {
+        font-size: 2vw;
+    }
+
+    .text_introduce>p {
+        padding-left: .3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        margin-top: 2%;
+        margin-right: 2%;
+    }
+
+    .img-fluid {
+        font-size: 2vw;
+    }
+
+    .text_introduce>p {
+        padding-left: 5vw;
+    }
+
+    .text_introduce_2>strong {
+        padding-left: 5vw;
+    }
+
+    .text_introduce_2>span {
+        padding-left: 6vw;
+    }
+}
+
+.font-lett {
+    letter-spacing: 1vh;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 的纵横比 */
+    height: 0;
+    overflow: hidden;
+  }
+  .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持纵横比并填充容器 */
+  }
+  .text-cente {
+    font-size: 2.5rem; /* 使用 rem 作为字体大小单位 */
+  }
+  @media (max-width: 768px) {
+    .text-cente {
+      font-size: 1.8rem; /* 在小屏幕上减小字体大小 */
+    }
+  }
+
+  .text_introduce p {
+    font-size: 1rem;
+}
+
+.text_introduce_2 strong {
+    font-size: 2.5vw;
+}
+
+.text_introduce_2 span {
+    display: block;
+    font-weight: bold;
+    font-size: 2vw;
+    color: #5a5657;
+}
+
+@media (max-width: 768px) {
+    .text_introduce p {
+        font-size: 0.875rem; /* Slightly smaller font size for smaller screens */
+    }
+
+    .text_introduce_2 strong {
+        font-size: 4vw; /* Adjust based on smaller screen */
+    }
+
+    .text_introduce_2 span {
+        font-size: 3vw; /* Adjust based on smaller screen */
+    }
+}
+
+@media (max-width: 576px) {
+    .text_introduce p {
+        font-size: 0.75rem; /* Smaller font size for very small screens */
+    }
+
+    .text_introduce_2 strong {
+        font-size: 5vw; /* Adjust based on very small screen */
+    }
+
+    .text_introduce_2 span {
+        font-size: 4vw; /* Adjust based on very small screen */
+    }
+}
+
+.custom-span {
+    display: flex;
+    align-items: center;
+    font-size: 2.5vw;
+}
+.custom-span img {
+    width: 6vw;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .custom-span {
+        font-size: 4vw;
+    }
+    .custom-span img {
+        width: 8vw;
+    }
+    .container>.row>.col-md-6>span>img{
+       
+        width: 8vw!important;
+    }
+    .container>.row>.col-md-6{
+       
+        margin-bottom: 5vw;
+        padding-left: 3vw;
+     }
+    .container>.row>.col-md-6>span{
+       
+        font-size: x-large!important;
+     }
+ 
+     .md-font{
+         font-size: x-large!important;
+     }
+
+     
+}
+
+@media (max-width: 576px) {
+    .custom-span {
+        font-size: 5vw;
+   
+        text-align: center;
+    }
+    .custom-span img {
+        width: 10vw;
+        margin-right: 0;
+        margin-bottom: 0.3rem;
+        margin-top: 2vw ;
+    }
+
+    .container>.row>.col-md-6>span>img{
+       
+        width: 10vw!important;
+    }
+
+    .container>.row>.col-md-6>span{
+       
+       font-size: x-large!important;
+    }
+
+    .md-font{
+        font-size: x-large!important;
+    }
+
+}

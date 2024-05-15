@@ -1,0 +1,158 @@
+
+*{
+    padding: 0;margin: 0;
+}
+
+main{
+    position: relative;
+    margin-top: 56px;
+}
+.bg-ff4d49{
+    background-color: #ff4d49;
+}
+button.navbar-toggler{
+    outline-color: rgba(0, 0, 0, 0);
+}
+#search{
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+}
+#searchInput{
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+#searchBtn{
+    border-radius:15px;
+    width: 63px;
+    background:#565656;
+}
+#app main #demo #carouselExampleCaptions img{
+    width: 100%;
+}
+#app #ad img{
+    width: 100%;
+}
+#menu ul{
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 15px
+}
+#menu li>a{
+    color: #565656;
+}
+#menu li>a>img {
+    width: 50px;
+}
+#ad{
+    position: relative;
+}
+#ad .close{
+    position: absolute;
+    right: 0;
+}
+/* 限时折扣 */
+.list-title{
+    height: 35px;
+    background-color:#fff;
+    border-bottom: 1px solid #ccc;
+    line-height: 35px;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    clear: both;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+.text-ff7d01{
+    color: #ff7d01;
+}
+#discount{
+    padding: 0;
+    list-style: none;
+}
+#discount>li img{
+    width: 40%;
+}
+#discount>li>a{
+    text-decoration: none;
+    color: #565656;
+}
+footer{
+    color: #bebebe;
+    background: #fff;
+}
+footer>.nav>li>a{
+    border-bottom: 1px solid #727272;
+    border-right-width: 1px solid #727272;
+}
+footer>.nav>li:last-child>a{
+    border-right: none;
+}
+
+ footer a{
+    color: #000;
+    font-size: 15px;
+ }
+/* footer a,footer a:active,footer a:visited{
+    color: #fff;
+} */
+
+footer .copyright{
+    text-align: center;
+}
+.router-view{
+    background-color: blanchedalmond;
+    /* position: absolute; */
+    z-index: 100;
+}
+
+/*详情*/
+.comment>.title{
+    padding: .5em;
+    color: #ff7d01;
+}
+.comment>.reply>textarea{
+    width: 100%;
+    resize: none;
+}.comment>ul{
+    list-style: none;
+}
+.comment>ul .media img{
+    width:64px;
+    border-radius: 50%;
+}
+.comment>ul .media .username{
+    color: #5997c0;
+    font-size: 14px !important;
+}
+.comment>ul .media .time{
+    color: #999;
+    font-size: 14px !important;
+}
+.comment>.reply>textarea{
+    width: 100%;
+    resize: none;
+}
+.comment>ul{
+    list-style: none;
+}
+.comment>ul .media img{
+    width: 64px;
+    border-radius: 50%;
+}
+.comment>ul .media .username{
+    color: #5997c0;
+    font-size: 14px !important;
+}
+.comment>ul .media .time{
+    color: #999;
+    font-size: 14px !important;
+}
