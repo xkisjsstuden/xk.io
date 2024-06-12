@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myLove❤</title>
     <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
@@ -9,8 +10,6 @@
     <script type="text/javascript" src="canvas_bg.js"></script>
     <script>
         $(function() {
-
-            // 开启弹框
             function opendiv(){
                 layui.use('layer', function(){
                     var layer = layui.layer;
@@ -18,7 +17,7 @@
                         type: 1,
                         title: "2025倒计时",
                         anim: 2,
-                        area: ['600px', '500px'],
+                        area: ['90%', '90%'],
                         content: $(".newYear"),
                         success: function(layero, index) {},
                         yes: function() {}
@@ -69,7 +68,6 @@
                 $("#dMinutes").html("相爱分钟: " + iMinutes.toFixed(8) + "分钟");
             };
 
-            /* 格式化时间 */
             function formartDate(mTime) {
                 var mYear = mTime.getFullYear();
                 var mMonth = mTime.getMonth() + 1;
@@ -86,7 +84,6 @@
                 return mYear + "-" + mMonth + "-" + mDate + "  " + mHours + ":" + mMinutes + ":" + mSeconds;
             }
 
-            /* 音乐点击 */
             $(".musicBtn").on("click", function() {
                 if ($(".audio1").get(0).paused) {
                     $(".audio1").get(0).play();
@@ -101,16 +98,20 @@
     <style>
         * {
             cursor: pointer;
+            box-sizing: border-box;
         }
 
         body {
             background-color: beige;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         #div1 {
             text-align: center;
             position: relative;
             top: 55px;
+            padding: 0 10px;
         }
 
         .loveName {
@@ -133,6 +134,79 @@
             top: 75%;
             text-align: center;
         }
+
+        .musicBtn {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .musicBtn i {
+            font-size: 28px;
+        }
+
+        .newYear {
+            font-size: 30px;
+            color: #0FCECE;
+            text-align: center;
+            display: none;
+            padding: 10px;
+        }
+
+        .endTitle1 {
+            font-size: 40px;
+        }
+
+        .endSeconds {
+            font-size: 88px;
+            color: aqua;
+        }
+
+        .endTitle2 {
+            font-size: 88px;
+            color: red;
+            display: none;
+        }
+
+        /* Mobile styles */
+        @media screen and (max-width: 600px) {
+            .loveName {
+                font-size: 10vw;
+            }
+
+            .lTime {
+                font-size: 5vw;
+            }
+
+            .musicBtn i {
+                font-size: 8vw;
+            }
+
+            .newYear {
+                font-size: 5vw;
+            }
+
+            .endTitle1 {
+                font-size: 7vw;
+            }
+
+            .endSeconds {
+                font-size: 14vw;
+            }
+
+
+            .endTitle2 {
+                font-size: 15vw;
+            }
+            #author {
+                position: static;
+                text-align: center;
+                margin-top: 20%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -148,23 +222,23 @@
         </div>
     </div>
     <button class="musicBtn">
-        <i class="layui-icon layui-icon-headset layui-anim layui-anim-rotate layui-anim-loop" style="font-size: 28px;position: fixed;left: 51px;top: 100px;"></i>
+        <i class="layui-icon layui-icon-headset layui-anim layui-anim-rotate layui-anim-loop"></i>
     </button>
     <audio autoplay="autoplay" loop class="audio1">
         <source src="music/yuai.mp3" type="audio/mpeg">
     </audio>
-    <div class="newYear" style="font-size: 30px;color: #0FCECE;text-align: center;display: none">
+    <div class="newYear">
         <br />
         <h2 class="endTitle1">距离2025年还剩余：</h2>
         <br />
-        <h1 style="font-size: 88px;color: aqua;" class="endSeconds">50秒</h1>
+        <h1 class="endSeconds">50秒</h1>
         <br />
-        <h2 class="endTitle2" style="font-size: 88px;color: red;display: none;">❤❤</h2>
+        <h2 class="endTitle2">❤❤</h2>
         <br />
     </div>
     <footer id="author">
         <p>@xk的小屁孩</p>
-        <p>今天也很想你哦❤爱你</p>
+        <p>今天也很想你哦<strong style="color: red;">❤爱你</strong></p>
     </footer>
 </body>
 </html>
